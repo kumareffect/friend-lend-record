@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d9ce6;
+    font-family: sans-serif;
+
+}
+
+label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.show {
+    width: 80%;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    margin: 0 10%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #22dcfd, #1c91e2, #27ddfe);
+
+}
+
+input[type='text'], input[type='number'], input[type='date'] {
+    height: 50px;
+    width: 80%;
+    border-radius: 8px;
+    border-style: none;
+    outline: none;
+    font-size: 17px;
+    padding-left: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.name, .amount, .date, .btns {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.date, .btns {
+    margin-bottom: 30px;
+}
+
+.name, .date, .amount, .btns {
+    margin-top: 30px;
+    position: relative;
+    left: 5%;
+}
+
+.entry {
+    position: relative;
+    top: 20px;
+    background-image: linear-gradient(to bottom right, #22dcfd, #1c91e2, #27ddfe);
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.friend-container {
+    background-image: linear-gradient(to bottom right, #22dcfd, #1c91e2, #27ddfe);
+    position: relative;
+    top: 100px;
+    margin: 0 10%;
+    height: 440px;
+    box-shadow: 5px 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    border-radius: 20px;
+}
+
+.friend-data {
+    background-color: #21dcfd;
+    margin: 0 5% 6% 5%;
+    align-items: center;
+    display: flex;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    top: 30px;
+    justify-content: flex-end;
+    height: 80px;
+}
+
+.friend-image img {
+    margin-top: 20px;
+    margin-left: -25px;
+}
+
+.friend-image, .friend-image img{
+    background-color: #34bad4;
+    top: -20px;
+    left: 25px;
+    position: absolute;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.friend-name {
+    margin-left: 150px;
+    flex-grow: 1;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.friend-amount {
+    background-color: aliceblue;
+    flex-grow: -1;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    left: -25px;
+}
+
+.btn-cancel, .btn-expense, .friend-amount  {
+    background-color: #1fc8e7;
+    color: #fff;
+    font-size: 1em;
+    padding: 7px 17px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-cancel:active, .btn-expense:active, .friend-amount:active {
+    transform: translateX(10px);
+    box-shadow: none;
+}
+
+.btn-expense {
+    margin-left: 10px;
+}
+
+
+
+
+
+.btn-entry {
+    background-color: #1fc8e7;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 10px;
+    margin: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-entry:active {
+    transform: translateX(10px);
+    box-shadow: none;
+}
+
+.filter {
+    background-image: linear-gradient(to left, #22dcfd, #1c91e2);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 60px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    color: #fff;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.date-select {
+    font-size: 18px;
+    padding: 10px;
+}
+
+select {
+    font-size: 18px;
+    border-radius: 8px;
+    position: relative;
+    border-style: none;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: none;
+    right: 20px;
+}
+
+.outer-dig {
+    margin-top: 20px;
+    border-radius: 10px 10px;
+    margin-left: 10px;
+    height: 150px;
+    width: 20px;
+    position: relative;
+    right: 5px;
+    background-color: #ceedff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.inner-dig {
+    background-color: #22dcfd;
+    height: 100%;
+}
+
+.date-diagram {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    height: 220px;
+    justify-content: space-around;
+    text-overflow:ellipsis;
+    border-radius: 8px;
+}
+
+.text-dig {
+    position: relative;
+    top: 5px;
+    left: 3px;
+}
+
+.filter-by {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
